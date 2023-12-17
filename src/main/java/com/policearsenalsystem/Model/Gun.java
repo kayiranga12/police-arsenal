@@ -28,9 +28,9 @@ public class Gun {
     private Date purchaseDate;
 
     private String registrationNumber;
-    @Lob
-    @Column(name = "GunImage", columnDefinition = "LONGBLOB")
-    private byte[]equipmentPhoto;
+//    @Lob
+//    @Column(name = "GunImage", columnDefinition = "LONGBLOB")
+//    private byte[]equipmentPhoto;
 
     @OneToMany(mappedBy = "gun")
     private List<Request> requests;
